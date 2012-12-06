@@ -311,7 +311,7 @@ install_data_dir = None
 class Install(install):
   def run(self):
     global install_data_dir
-    install_data_dir = self.install_purelib
+    install_data_dir = self.install_purelib[len(self.root):]
     install.run(self)
 
 class InstallData(install_data):
