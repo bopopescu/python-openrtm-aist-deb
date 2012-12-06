@@ -11,8 +11,7 @@ X-Python-Version: all
 
 Package: python-openrtm-aist
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends}, omniidl4-python
-Provides: ${python:Provides}
+Depends: ${misc:Depends}, omniidl4-python, python
 XB-Python-Version: ${python:Versions}
 Description: Component-oriented robotics system development platform (Python)
  Development platform allowing robotics system design by writing
