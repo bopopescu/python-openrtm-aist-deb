@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: OpenRTM-aist-Python
+Version: 1.1.0
+Summary: Python modules for OpenRTM-aist-1.1
+Home-page: http://www.openrtm.org/
+Author: Shinji Kurihara and Noriaki Ando
+Author-email: n-ando@aist.go.jp
+License: LGPL
+Description: OpenRTM-aist is a reference implementation of RT-Middleware,
+        which is now under standardization process in OMG (Object Management Group).
+        OpenRTM-aist is being developed and distributed by
+        Intelligent Systems Research Institute,
+        National Institute of Advanced Industrial Science and Technology (AIST), Japan.
+        Please see http://www.openrtm.org/ for more detail.
+        
+Platform: UNKNOWN
