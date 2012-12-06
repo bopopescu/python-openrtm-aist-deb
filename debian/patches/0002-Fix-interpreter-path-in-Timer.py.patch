@@ -1,0 +1,19 @@
+From: Thomas Moulard <thomas.moulard@gmail.com>
+Date: Thu, 6 Dec 2012 17:51:36 +0900
+Subject: [PATCH] Fix interpreter path in Timer.py.
+
+---
+ OpenRTM_aist/Timer.py |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/OpenRTM_aist/Timer.py b/OpenRTM_aist/Timer.py
+index 3e02068..9a2f26c 100644
+--- a/OpenRTM_aist/Timer.py
++++ b/OpenRTM_aist/Timer.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env/python
++#!/usr/bin/env python
+ # -*- coding: euc-jp -*-
+ 
+ ##
+-- 

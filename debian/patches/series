@@ -1,0 +1,3 @@
+0001-Fix-data-install-if-root-flag-is-passed.patch
+0002-Fix-interpreter-path-in-Timer.py.patch
+0003-Do-not-install-setup.sh.patch
