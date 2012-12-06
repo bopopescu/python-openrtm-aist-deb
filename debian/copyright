@@ -1,0 +1,39 @@
+This work was packaged for Debian by:
+
+    Thomas Moulard <thomas.moulard@gmail.com> on Mon, 03 Dec 2012 16:39:00 +0900
+
+It was downloaded from http://www.openrtm.org/
+
+Upstream Authors:
+
+    Noriaki Ando <n-ando@aist.go.jp>
+
+Copyright:
+
+    Noriaki Ando and the OpenRTM-aist Project team
+    Intelligent Systems Research Institute,
+    National Institute of Advanced Industrial Science and Technology (AIST),
+    Tsukuba, Japan, All rights reserved.
+
+License:
+
+    The OpenRTM-aist is the dual-licensed open source software. You can
+    use, copy, distribute and/or modify this library under the terms and
+    conditions of either of the licenses below.
+
+    1) LGPL (GNU Lesser General Public License - v3)
+    See `/usr/share/common-licenses/LGPL-3'.
+
+    2) Individual License
+    You can purchase license from AIST and/or AIST's TLO to copy,
+    distribute, modify and/or sublicense the library without any
+    limitation in the terms of LGPL. The individual license should be
+    concluded with a negotiated agreement between you and AIST and/or AIST
+    TLO. To conclude individual license, contact the person responsible of
+    AIST.
+
+The Debian packaging is:
+
+    Copyright (C) 2010-2012 Thomas Moulard <thomas.moulard@gmail.com>
+    and is licensed under the GPL version 3,
+    see `/usr/share/common-licenses/GPL-3'.

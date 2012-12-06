@@ -1,0 +1,23 @@
+Source: python-openrtm-aist
+Priority: extra
+Maintainer: Thomas Moulard <thomas.moulard@gmail.com>
+Build-Depends: debhelper (>= 7.0.50), doxygen, omniidl-python, python
+Standards-Version: 3.9.3
+Section: contrib/python
+Homepage: http://www.openrtm.org/
+Vcs-Git: git://github.com/thomas-moulard/python-openrtm-aist-deb.git
+Vcs-Browser: https://github.com/thomas-moulard/python-openrtm-aist-deb
+X-Python-Version: all
+
+Package: python-openrtm-aist
+Architecture: all
+Section: contrib/python
+Depends: ${python:Depends}, ${misc:Depends}, omniidl4-python
+Provides: ${python:Provides}
+XB-Python-Version: ${python:Versions}
+Description: Component-oriented robotics system development platform (Python)
+ Development platform allowing robotics system design by writing
+ RT-components and connecting them together.
+ .
+ This package contains the documentation for the C++ version of
+ this software.

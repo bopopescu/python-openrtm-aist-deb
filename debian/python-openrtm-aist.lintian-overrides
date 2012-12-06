@@ -1,0 +1,8 @@
+binary-without-manpage usr/bin/rtcd_python
+binary-without-manpage usr/bin/rtcprof_python
+binary-without-manpage usr/bin/setup.sh
+W: python-openrtm-aist: script-with-language-extension usr/bin/setup.sh
+E: python-openrtm-aist: wrong-path-for-interpreter ./usr/share/pyshared/OpenRTM_aist/Timer.py (#!/usr/bin/env/python != /usr/bin/python)
+W: python-openrtm-aist: script-not-executable ./usr/share/pyshared/OpenRTM_aist/ext/sdo/observer/setup.sh
+W: python-openrtm-aist: executable-not-elf-or-script ./usr/share/pyshared/OpenRTM_aist/RTM_IDL/DataPort.idl
+W: python-openrtm-aist: executable-not-elf-or-script ./usr/share/pyshared/OpenRTM_aist/RTM_IDL/OpenRTM.idl
