@@ -11,4 +11,4 @@
 
 override_dh_install:
 	dh_install
-	find debian/python-openrtm-aist/ -name '*.idl ' -exec chmod 644 {} \;
+	find debian/python-openrtm-aist/ -name '*.idl' -exec chmod 644 {} \;
