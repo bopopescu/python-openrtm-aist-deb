@@ -5,8 +5,8 @@ Build-Depends: debhelper (>= 7.0.50), doxygen, omniidl-python, python
 Standards-Version: 3.9.3
 Section: contrib/python
 Homepage: http://www.openrtm.org/
-Vcs-Git: git://github.com/thomas-moulard/python-openrtm-aist-deb.git
-Vcs-Browser: https://github.com/thomas-moulard/python-openrtm-aist-deb
+Vcs-Browser: http://git.debian.org/?p=debian-science/packages/python-openrtm-aist.git
+Vcs-Git: git://git.debian.org/debian-science/packages/python-openrtm-aist.git
 X-Python-Version: all
 
 Package: python-openrtm-aist
