@@ -121,13 +121,13 @@ Manager._d_get_component_profiles = ((), (omniORB.typeMapping["IDL:omg.org/RTC/C
 Manager._d_get_profile = ((), (omniORB.typeMapping["IDL:RTM/ManagerProfile:1.0"], ), None)
 Manager._d_get_configuration = ((), (omniORB.typeMapping["IDL:RTM/NVList:1.0"], ), None)
 Manager._d_set_configuration = (((omniORB.tcInternal.tv_string,0), (omniORB.tcInternal.tv_string,0)), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
-Manager._d_is_master = ((), (omniORB.tcInternal.tv_boolean, ), None)
-Manager._d_get_master_managers = ((), (omniORB.typeMapping["IDL:RTM/ManagerList:1.0"], ), None)
-Manager._d_add_master_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
-Manager._d_remove_master_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
-Manager._d_get_slave_managers = ((), (omniORB.typeMapping["IDL:RTM/ManagerList:1.0"], ), None)
-Manager._d_add_slave_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
-Manager._d_remove_slave_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
+Manager._d_is_main = ((), (omniORB.tcInternal.tv_boolean, ), None)
+Manager._d_get_main_managers = ((), (omniORB.typeMapping["IDL:RTM/ManagerList:1.0"], ), None)
+Manager._d_add_main_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
+Manager._d_remove_main_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
+Manager._d_get_subordinate_managers = ((), (omniORB.typeMapping["IDL:RTM/ManagerList:1.0"], ), None)
+Manager._d_add_subordinate_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
+Manager._d_remove_subordinate_manager = ((omniORB.typeMapping["IDL:RTM/Manager:1.0"], ), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
 Manager._d_fork = ((), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
 Manager._d_shutdown = ((), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
 Manager._d_restart = ((), (omniORB.typeMapping["IDL:omg.org/RTC/ReturnCode_t:1.0"], ), None)
@@ -176,26 +176,26 @@ class _objref_Manager (CORBA.Object):
     def set_configuration(self, *args):
         return _omnipy.invoke(self, "set_configuration", _0_RTM.Manager._d_set_configuration, args)
 
-    def is_master(self, *args):
-        return _omnipy.invoke(self, "is_master", _0_RTM.Manager._d_is_master, args)
+    def is_main(self, *args):
+        return _omnipy.invoke(self, "is_main", _0_RTM.Manager._d_is_main, args)
 
-    def get_master_managers(self, *args):
-        return _omnipy.invoke(self, "get_master_managers", _0_RTM.Manager._d_get_master_managers, args)
+    def get_main_managers(self, *args):
+        return _omnipy.invoke(self, "get_main_managers", _0_RTM.Manager._d_get_main_managers, args)
 
-    def add_master_manager(self, *args):
-        return _omnipy.invoke(self, "add_master_manager", _0_RTM.Manager._d_add_master_manager, args)
+    def add_main_manager(self, *args):
+        return _omnipy.invoke(self, "add_main_manager", _0_RTM.Manager._d_add_main_manager, args)
 
-    def remove_master_manager(self, *args):
-        return _omnipy.invoke(self, "remove_master_manager", _0_RTM.Manager._d_remove_master_manager, args)
+    def remove_main_manager(self, *args):
+        return _omnipy.invoke(self, "remove_main_manager", _0_RTM.Manager._d_remove_main_manager, args)
 
-    def get_slave_managers(self, *args):
-        return _omnipy.invoke(self, "get_slave_managers", _0_RTM.Manager._d_get_slave_managers, args)
+    def get_subordinate_managers(self, *args):
+        return _omnipy.invoke(self, "get_subordinate_managers", _0_RTM.Manager._d_get_subordinate_managers, args)
 
-    def add_slave_manager(self, *args):
-        return _omnipy.invoke(self, "add_slave_manager", _0_RTM.Manager._d_add_slave_manager, args)
+    def add_subordinate_manager(self, *args):
+        return _omnipy.invoke(self, "add_subordinate_manager", _0_RTM.Manager._d_add_subordinate_manager, args)
 
-    def remove_slave_manager(self, *args):
-        return _omnipy.invoke(self, "remove_slave_manager", _0_RTM.Manager._d_remove_slave_manager, args)
+    def remove_subordinate_manager(self, *args):
+        return _omnipy.invoke(self, "remove_subordinate_manager", _0_RTM.Manager._d_remove_subordinate_manager, args)
 
     def fork(self, *args):
         return _omnipy.invoke(self, "fork", _0_RTM.Manager._d_fork, args)
@@ -209,7 +209,7 @@ class _objref_Manager (CORBA.Object):
     def get_service(self, *args):
         return _omnipy.invoke(self, "get_service", _0_RTM.Manager._d_get_service, args)
 
-    __methods__ = ["load_module", "unload_module", "get_loadable_modules", "get_loaded_modules", "get_factory_profiles", "create_component", "delete_component", "get_components", "get_component_profiles", "get_profile", "get_configuration", "set_configuration", "is_master", "get_master_managers", "add_master_manager", "remove_master_manager", "get_slave_managers", "add_slave_manager", "remove_slave_manager", "fork", "shutdown", "restart", "get_service"] + CORBA.Object.__methods__
+    __methods__ = ["load_module", "unload_module", "get_loadable_modules", "get_loaded_modules", "get_factory_profiles", "create_component", "delete_component", "get_components", "get_component_profiles", "get_profile", "get_configuration", "set_configuration", "is_main", "get_main_managers", "add_main_manager", "remove_main_manager", "get_subordinate_managers", "add_subordinate_manager", "remove_subordinate_manager", "fork", "shutdown", "restart", "get_service"] + CORBA.Object.__methods__
 
 omniORB.registerObjref(Manager._NP_RepositoryId, _objref_Manager)
 _0_RTM._objref_Manager = _objref_Manager
@@ -221,7 +221,7 @@ class Manager (PortableServer.Servant):
     _NP_RepositoryId = _0_RTM.Manager._NP_RepositoryId
 
 
-    _omni_op_d = {"load_module": _0_RTM.Manager._d_load_module, "unload_module": _0_RTM.Manager._d_unload_module, "get_loadable_modules": _0_RTM.Manager._d_get_loadable_modules, "get_loaded_modules": _0_RTM.Manager._d_get_loaded_modules, "get_factory_profiles": _0_RTM.Manager._d_get_factory_profiles, "create_component": _0_RTM.Manager._d_create_component, "delete_component": _0_RTM.Manager._d_delete_component, "get_components": _0_RTM.Manager._d_get_components, "get_component_profiles": _0_RTM.Manager._d_get_component_profiles, "get_profile": _0_RTM.Manager._d_get_profile, "get_configuration": _0_RTM.Manager._d_get_configuration, "set_configuration": _0_RTM.Manager._d_set_configuration, "is_master": _0_RTM.Manager._d_is_master, "get_master_managers": _0_RTM.Manager._d_get_master_managers, "add_master_manager": _0_RTM.Manager._d_add_master_manager, "remove_master_manager": _0_RTM.Manager._d_remove_master_manager, "get_slave_managers": _0_RTM.Manager._d_get_slave_managers, "add_slave_manager": _0_RTM.Manager._d_add_slave_manager, "remove_slave_manager": _0_RTM.Manager._d_remove_slave_manager, "fork": _0_RTM.Manager._d_fork, "shutdown": _0_RTM.Manager._d_shutdown, "restart": _0_RTM.Manager._d_restart, "get_service": _0_RTM.Manager._d_get_service}
+    _omni_op_d = {"load_module": _0_RTM.Manager._d_load_module, "unload_module": _0_RTM.Manager._d_unload_module, "get_loadable_modules": _0_RTM.Manager._d_get_loadable_modules, "get_loaded_modules": _0_RTM.Manager._d_get_loaded_modules, "get_factory_profiles": _0_RTM.Manager._d_get_factory_profiles, "create_component": _0_RTM.Manager._d_create_component, "delete_component": _0_RTM.Manager._d_delete_component, "get_components": _0_RTM.Manager._d_get_components, "get_component_profiles": _0_RTM.Manager._d_get_component_profiles, "get_profile": _0_RTM.Manager._d_get_profile, "get_configuration": _0_RTM.Manager._d_get_configuration, "set_configuration": _0_RTM.Manager._d_set_configuration, "is_main": _0_RTM.Manager._d_is_main, "get_main_managers": _0_RTM.Manager._d_get_main_managers, "add_main_manager": _0_RTM.Manager._d_add_main_manager, "remove_main_manager": _0_RTM.Manager._d_remove_main_manager, "get_subordinate_managers": _0_RTM.Manager._d_get_subordinate_managers, "add_subordinate_manager": _0_RTM.Manager._d_add_subordinate_manager, "remove_subordinate_manager": _0_RTM.Manager._d_remove_subordinate_manager, "fork": _0_RTM.Manager._d_fork, "shutdown": _0_RTM.Manager._d_shutdown, "restart": _0_RTM.Manager._d_restart, "get_service": _0_RTM.Manager._d_get_service}
 
 Manager._omni_skeleton = Manager
 _0_RTM__POA.Manager = Manager
